@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tt {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #00913e !important;
+}
+
+.tt p {
+    margin-right: 10px;
+    color: white;
+    margin-top: 15px;
+}
+
+.tt img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.navbar {
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+}
+
+.navbar-brand,
+.navbar-nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-width: 10%;
+    margin-right: 10px;
+}
+
+.navbar-brand p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.container {
+    display: block;
+}
+
+.carousel-caption {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('./3.jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 600PX;
+    display: block;
+    margin: auto;
+}
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain {
+    display: flex;
+    height: 100%;
+}
+.dual-color-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.dual-color-text .highlight {
+    background: url(./O\ \(1\).jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    padding-top: -10px;
+}
+.info-box {
+    border: none;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    outline: none; /* Loại bỏ đường viền khi hover */
+}
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    outline: none; /* Loại bỏ đường viền khi hover */
+}
+
+.info-box:not(:hover) {
+    transform: translateY(0);
+}
+.info-box:not(:hover) {
+    transform: translateY(0);
+    outline: none; /* Loại bỏ đường viền khi không hover */
+}
+/* CSS để tạo màu nổi bật cho "Chi tiết sản phẩm" */
+.detail {
+    display: none;
+    color: #007bff; /* Màu nổi bật */
+    font-weight: bold; /* Chữ đậm */
+}
+
+/* CSS để hiển thị "Chi tiết sản phẩm" khi di chuột vào */
+.info-box:hover .detail {
+    display: block;
+}
+
+footer {
+    margin-top: 50px; /* Thay đổi khoảng cách trên của footer */
+}
+.info-box .detail {
+    display: none; /* Ẩn "Chi tiết sản phẩm" mặc định */
+    color: #007bff; /* Màu nổi bật */
+    font-weight: bold; /* Chữ đậm */
+    backface-visibility: hidden; /* Tạo hiệu ứng mượt mà */
+}
+
+.info-box:hover .detail {
+    display: block; /* Hiển thị "Chi tiết sản phẩm" khi hover */
+}
